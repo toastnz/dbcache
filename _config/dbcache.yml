@@ -1,0 +1,13 @@
+---
+Name: DBCacheConfig
+---
+
+SilverStripe\Control\Controller:
+  extensions:
+    - Toast\DBCache\Extensions\ControllerDBCacheExtension
+
+Toast\DBCache\Helpers\DBCache:
+  expiry_minutes: 0
+
+Toast\DBCache\Extensions\ControllerDBCacheExtension:
+  clear_on_flush: true
